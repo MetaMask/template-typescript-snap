@@ -1,5 +1,4 @@
 import { OnRpcRequestHandler } from '@metamask/snap-types';
-import { getMessage } from './message';
 
 export const onRpcRequest: OnRpcRequestHandler = ({ origin, request }) => {
   switch (request.method) {
@@ -9,7 +8,7 @@ export const onRpcRequest: OnRpcRequestHandler = ({ origin, request }) => {
         params: [
           {
             type: 'inapp',
-            message: getMessage(origin),
+            message: `Hello, ${origin}!`,
           },
         ],
       });
