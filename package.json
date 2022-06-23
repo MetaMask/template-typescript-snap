@@ -19,6 +19,7 @@
     "build:clean": "yarn clean && yarn build",
     "build:website": "node ./scripts/build-website.js",
     "clean": "rimraf 'dist/*'",
+    "test": "echo 'TODO'",
     "lint": "yarn lint:eslint && yarn lint:misc --check",
     "lint:eslint": "eslint . --cache --ext js,ts",
     "lint:fix": "yarn lint:eslint --fix && yarn lint:misc --write",
