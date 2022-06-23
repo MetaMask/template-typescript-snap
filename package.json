@@ -15,15 +15,15 @@
     "snap.manifest.json"
   ],
   "scripts": {
+    "build": "mm-snap build",
     "build:clean": "yarn clean && yarn build",
     "build:website": "node ./scripts/build-website.js",
-    "build": "mm-snap build",
-    "serve": "mm-snap serve",
     "clean": "rimraf 'dist/*'",
-    "lint:eslint": "eslint . --cache --ext js,ts",
-    "lint:misc": "prettier '**/*.json' '**/*.md' '!CHANGELOG.md' --ignore-path .gitignore",
     "lint": "yarn lint:eslint && yarn lint:misc --check",
-    "lint:fix": "yarn lint:eslint --fix && yarn lint:misc --write"
+    "lint:eslint": "eslint . --cache --ext js,ts",
+    "lint:fix": "yarn lint:eslint --fix && yarn lint:misc --write",
+    "lint:misc": "prettier '**/*.json' '**/*.md' '!CHANGELOG.md' --ignore-path .gitignore",
+    "serve": "mm-snap serve"
   },
   "devDependencies": {
     "@lavamoat/allow-scripts": "^2.0.3",
@@ -34,6 +34,8 @@
     "@metamask/eslint-config-typescript": "^8.0.0",
     "@metamask/snap-types": "^0.15.0",
     "@metamask/snaps-cli": "^0.15.0",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.4",
