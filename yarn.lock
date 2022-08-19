@@ -1660,6 +1660,13 @@
   dependencies:
     "@metamask/controllers" "^30.0.0"
 
+"@metamask/snap-types@^0.19.0":
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/@metamask/snap-types/-/snap-types-0.19.0.tgz#ead590ecbb840cf2cd1c4feffbf8228ca87bc912"
+  integrity sha512-8huwKsiM05mG8/V8/zvJ3xy555P1RPk1fs1znbJaGTYk3HAJVW2i3d95iOcM6Cs+zbTwsrFfGnO2yqH31anPgA==
+  dependencies:
+    "@metamask/controllers" "^30.0.0"
+
 "@metamask/snap-utils@^0.18.0":
   version "0.18.0"
   resolved "https://registry.yarnpkg.com/@metamask/snap-utils/-/snap-utils-0.18.0.tgz#0e4aa112fe88c857c75daf184e1093e7cac73c81"
