@@ -1726,10 +1726,10 @@
   resolved "https://registry.yarnpkg.com/@metamask/safe-event-emitter/-/safe-event-emitter-2.0.0.tgz#af577b477c683fad17c619a78208cede06f9605c"
   integrity sha512-/kSXhY692qiV1MXu6EeOZvg5nECLclxNXcKCxJ3cXQgYuRymRHpdx/t7JXfsK+JLjwA1e1c1/SBrlQYpusC29Q==
 
-"@metamask/snap-types@^0.18.0":
-  version "0.18.0"
-  resolved "https://registry.yarnpkg.com/@metamask/snap-types/-/snap-types-0.18.0.tgz#1a87fb60f1413f08e2b52ec2834dba74d2a92c7e"
-  integrity sha512-e3LWwpNLFfSz3UegH/Rj7PE7WMrnt8R2s3014fq80nkqYzP0l+pOo5elnHM9J+MXaeD8dLWYr27CT4jEBT4HVw==
+"@metamask/snap-types@^0.19.1":
+  version "0.19.1"
+  resolved "https://registry.yarnpkg.com/@metamask/snap-types/-/snap-types-0.19.1.tgz#125f1d5835a7a465172b6b8097b29b91846e275d"
+  integrity sha512-GpNCE34txVKXva5PDzI9HQ/UamOteLzXh4awESu2ERfqpoXdethLBuVALFgwNTzZCFsBcwZHLAatQs7ft/ijjQ==
   dependencies:
     "@metamask/controllers" "^30.0.0"
 
