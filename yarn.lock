@@ -1733,31 +1733,41 @@
   dependencies:
     "@metamask/controllers" "^30.0.0"
 
-"@metamask/snap-utils@^0.19.1":
-  version "0.19.1"
-  resolved "https://registry.yarnpkg.com/@metamask/snap-utils/-/snap-utils-0.19.1.tgz#9f77027687778ffbea0f7a14fcb7746c4b778c3e"
-  integrity sha512-i4qqaP+E5DVDi+unuEVnKIybg6EfsTWngaQlJcuHhjvA91o/LBHVaVwFwBGsJGUFgVKNKqKAwk8UuVpkKOf6fQ==
+"@metamask/snap-types@^0.20.0":
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/@metamask/snap-types/-/snap-types-0.20.0.tgz#5ca3a79a3fbde0a7bb1214a80d8c4f43b7a7e22c"
+  integrity sha512-hYk1ruDolc46I+ebqpBRiL+hIfVMbrRZtHDlKiBwr3iFw73PPKacvrSUaI6rSCLeHKEwCF6IEkTfLxnGWJNYhw==
+  dependencies:
+    "@metamask/controllers" "^30.0.0"
+    "@metamask/snap-utils" "^0.20.0"
+
+"@metamask/snap-utils@^0.20.0":
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/@metamask/snap-utils/-/snap-utils-0.20.0.tgz#670a2f5b67381c3b944a44ee179ce0190fcdfe63"
+  integrity sha512-g5GnsQS/IhJM9uRNTzhwK5vBSm+eThFjX0AyOp72xXB1n0uJVL/XbE8wgJSdiniqOI+jaxMh5vHxhfd2FdqcmQ==
   dependencies:
     "@babel/core" "^7.18.6"
+    "@metamask/snap-types" "^0.20.0"
     "@metamask/utils" "^2.0.0"
     ajv "^8.11.0"
+    eth-rpc-errors "^4.0.3"
     fast-deep-equal "^3.1.3"
     rfdc "^1.3.0"
     semver "^7.3.7"
     ses "^0.15.17"
 
-"@metamask/snaps-browserify-plugin@^0.19.1":
-  version "0.19.1"
-  resolved "https://registry.yarnpkg.com/@metamask/snaps-browserify-plugin/-/snaps-browserify-plugin-0.19.1.tgz#15dc50be5d24eb3555a9d23b59411517d62f2719"
-  integrity sha512-aKsKbiXCGEIwZ+7rcUfWCLVRXOgtm3rKxDmyqr8rzOARcxARwi5r2z4oGLoY1D5negZWqpJ/JPtf3PRPIdqlgA==
+"@metamask/snaps-browserify-plugin@^0.20.0":
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/@metamask/snaps-browserify-plugin/-/snaps-browserify-plugin-0.20.0.tgz#faf9bfd53c3bffa9a64cb72477869b85b26d902c"
+  integrity sha512-eG1e8QwLr9VQ1KFZTve5KBnSkEzeIpvYsdATlfGjx2rCV5ylQp4Ph67/LuHTIU5NnMTAbw437al890HFam/1VA==
   dependencies:
-    "@metamask/snap-utils" "^0.19.1"
+    "@metamask/snap-utils" "^0.20.0"
     convert-source-map "^1.8.0"
 
-"@metamask/snaps-cli@^0.19.1":
-  version "0.19.1"
-  resolved "https://registry.yarnpkg.com/@metamask/snaps-cli/-/snaps-cli-0.19.1.tgz#0f9a2b5b39dec40bf7bc45175b6881e01a7d40a3"
-  integrity sha512-NODIfY1WbhIte9QcTFuq0AdMeCevTLtj9nBxWRuKX+GXs0w+o49MqxY1iou2UpPeYNZiBVN/lR7PMYxSJHDgyw==
+"@metamask/snaps-cli@^0.20.0":
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/@metamask/snaps-cli/-/snaps-cli-0.20.0.tgz#7d5d511df3ef2513b96bf45339f1865ffb9491df"
+  integrity sha512-OvfVDe3FNqqbz4m0j60kJpa4lHA+ggeGtGbfoBcdkjgSJ63XvZQyd0PPdX3nE0RL+6GLpYRjQeahCrENmMGX7w==
   dependencies:
     "@babel/core" "^7.16.7"
     "@babel/plugin-proposal-class-properties" "^7.16.7"
@@ -1767,8 +1777,8 @@
     "@babel/plugin-transform-runtime" "^7.16.7"
     "@babel/preset-env" "^7.16.7"
     "@babel/preset-typescript" "^7.16.7"
-    "@metamask/snap-utils" "^0.19.1"
-    "@metamask/snaps-browserify-plugin" "^0.19.1"
+    "@metamask/snap-utils" "^0.20.0"
+    "@metamask/snaps-browserify-plugin" "^0.20.0"
     "@metamask/utils" "^2.0.0"
     babelify "^10.0.0"
     browserify "^17.0.0"
@@ -3551,7 +3561,7 @@ eth-rpc-errors@^3.0.0:
   dependencies:
     fast-safe-stringify "^2.0.6"
 
-eth-rpc-errors@^4.0.0, eth-rpc-errors@^4.0.2:
+eth-rpc-errors@^4.0.0, eth-rpc-errors@^4.0.2, eth-rpc-errors@^4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/eth-rpc-errors/-/eth-rpc-errors-4.0.3.tgz#6ddb6190a4bf360afda82790bb7d9d5e724f423a"
   integrity sha512-Z3ymjopaoft7JDoxZcEb3pwdGh7yiYMhOwm2doUt6ASXlMavpNlK6Cre0+IMl2VSGyEU9rkiperQhp5iRxn5Pg==
