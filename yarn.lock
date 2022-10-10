@@ -1259,6 +1259,15 @@
     "@metamask/snap-utils" "^0.21.0"
     "@metamask/types" "^1.1.0"
 
+"@metamask/snap-types@^0.22.1":
+  version "0.22.1"
+  resolved "https://registry.yarnpkg.com/@metamask/snap-types/-/snap-types-0.22.1.tgz#3b7a2de726b1abc3d64d5727351f53ada9d5d09e"
+  integrity sha512-1EacZKX1Ot44bRnmkoFkw472lPGDxUU0OoBvNQW+sDtyGagZaeS/DWnkdj2kUBruXbPHikA9b49xjAGhenWS5w==
+  dependencies:
+    "@metamask/providers" "^9.0.0"
+    "@metamask/snap-utils" "^0.22.1"
+    "@metamask/types" "^1.1.0"
+
 "@metamask/snap-utils@^0.21.0":
   version "0.21.0"
   resolved "https://registry.yarnpkg.com/@metamask/snap-utils/-/snap-utils-0.21.0.tgz#7ed5df1d0c25f2660ce36dcc436f3608d72e92d5"
@@ -1274,18 +1283,36 @@
     semver "^7.3.7"
     ses "^0.15.17"
 
-"@metamask/snaps-browserify-plugin@^0.21.0":
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/@metamask/snaps-browserify-plugin/-/snaps-browserify-plugin-0.21.0.tgz#d47aebda6ddb2d9b31aa043dfa6e00e30485a6e0"
-  integrity sha512-vaB9dAEYsOuURmeGNF+Xxqk45o74FgnlHu0YEYJlLIr/V+VPh3SOLPtFZiu2N04ZPKNOi8R/pbcVeqMTgkBQfw==
+"@metamask/snap-utils@^0.22.1":
+  version "0.22.1"
+  resolved "https://registry.yarnpkg.com/@metamask/snap-utils/-/snap-utils-0.22.1.tgz#d956a614a162c090328f42b694aa3797d27ae228"
+  integrity sha512-dVXDWCmS42P3dFekwWGdYePD5IVesxGXoup3ptvOAwER8RCADnE2qIWRzTN8Cgp7qzZ4Y7T5hmZOmnM3CD1I7g==
   dependencies:
-    "@metamask/snap-utils" "^0.21.0"
+    "@babel/core" "^7.18.6"
+    "@metamask/snap-types" "^0.22.1"
+    "@metamask/utils" "^3.1.0"
+    "@noble/hashes" "^1.1.3"
+    "@scure/base" "^1.1.1"
+    ajv "^8.11.0"
+    eth-rpc-errors "^4.0.3"
+    fast-deep-equal "^3.1.3"
+    rfdc "^1.3.0"
+    semver "^7.3.7"
+    ses "^0.15.17"
+    superstruct "^0.16.5"
+
+"@metamask/snaps-browserify-plugin@^0.22.1":
+  version "0.22.1"
+  resolved "https://registry.yarnpkg.com/@metamask/snaps-browserify-plugin/-/snaps-browserify-plugin-0.22.1.tgz#6d36a6f12cfdb4e9709a43631294a35902edf8fc"
+  integrity sha512-4tLnQcqVLWvwFyeUD/x0p4VfjKpSotTSQNROPcE56z9A6YX6a4rMVZd0uinXLs23/SVCht2YDpOJp5ECJkzC8A==
+  dependencies:
+    "@metamask/snap-utils" "^0.22.1"
     convert-source-map "^1.8.0"
 
-"@metamask/snaps-cli@^0.21.0":
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/@metamask/snaps-cli/-/snaps-cli-0.21.0.tgz#43e05336236b10064d8295351d253002d029c683"
-  integrity sha512-6SQdhx7KSEnMYD3j0z3+1u4P8A3NLdUQl5Xb4UyAJEcPWen9h2fq0yhqsijCWycDEpfvch/5fNt0iTlf7Y2eKg==
+"@metamask/snaps-cli@^0.22.1":
+  version "0.22.1"
+  resolved "https://registry.yarnpkg.com/@metamask/snaps-cli/-/snaps-cli-0.22.1.tgz#fad06bf24caa6aa500813f99a69702422b62a90b"
+  integrity sha512-tvw8xJjuYDXwscglNvOIH65Bqt4D2rkkjdF5OsOlDdMF1G0GuRrqYdPFDT8WVA7pc1y5u/eqDTKsB9DJELNa7A==
   dependencies:
     "@babel/core" "^7.16.7"
     "@babel/plugin-proposal-class-properties" "^7.16.7"
@@ -1295,9 +1322,9 @@
     "@babel/plugin-transform-runtime" "^7.16.7"
     "@babel/preset-env" "^7.16.7"
     "@babel/preset-typescript" "^7.16.7"
-    "@metamask/snap-utils" "^0.21.0"
-    "@metamask/snaps-browserify-plugin" "^0.21.0"
-    "@metamask/utils" "^2.0.0"
+    "@metamask/snap-utils" "^0.22.1"
+    "@metamask/snaps-browserify-plugin" "^0.22.1"
+    "@metamask/utils" "^3.1.0"
     babelify "^10.0.0"
     browserify "^17.0.0"
     chokidar "^3.5.2"
@@ -1321,6 +1348,21 @@
   integrity sha512-AZ63AhRxAZXll+/SEiyEXgrxuAL4yOj0ny4V36VgPmTDvt+7GrmVJWrQF3o5PZZWV6ooaHZ9291RZHRcKZm0HA==
   dependencies:
     fast-deep-equal "^3.1.3"
+
+"@metamask/utils@^3.1.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@metamask/utils/-/utils-3.2.0.tgz#816a26383438d0112244bfd6406ebde2d5c9edb3"
+  integrity sha512-cRPZ+S2e7Z9a2mFb+XKYHyEQ9gHN3bU5XV9qkdF0SZX6qsS7/ZKQ6VFXuYUbW69gl2kwyabPLNtVixq1tY6b6Q==
+  dependencies:
+    "@types/debug" "^4.1.7"
+    debug "^4.3.4"
+    fast-deep-equal "^3.1.3"
+    superstruct "^0.16.5"
+
+"@noble/hashes@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.1.3.tgz#360afc77610e0a61f3417e497dcf36862e4f8111"
+  integrity sha512-CE0FCR57H2acVI5UOzIGSSIYxZ6v/HOhDR0Ro9VLyhnzLwx0o8W1mmgaqlEUx4049qJDlIBRztv5k+MM8vbO3A==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -1365,6 +1407,11 @@
     node-gyp "^7.1.0"
     read-package-json-fast "^2.0.1"
 
+"@scure/base@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@scure/base/-/base-1.1.1.tgz#ebb651ee52ff84f420097055f4bf46cfba403938"
+  integrity sha512-ZxOhsSyxYwLJj3pLZCefNitxsj093tb2vq90mp2txoYeBqbcjDjqFhyM8eUjq/uFm6zJ+mUuqxlS2FkuSY1MTA==
+
 "@types/chrome@^0.0.136":
   version "0.0.136"
   resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.136.tgz#7c011b9f997b0156f25a140188a0c5689d3f368f"
@@ -1372,6 +1419,13 @@
   dependencies:
     "@types/filesystem" "*"
     "@types/har-format" "*"
+
+"@types/debug@^4.1.7":
+  version "4.1.7"
+  resolved "https://registry.yarnpkg.com/@types/debug/-/debug-4.1.7.tgz#7cc0ea761509124709b8b2d1090d8f6c17aadb82"
+  integrity sha512-9AonUzyTjXXhEOa0DnqpzZi6VHlqKMswga9EXjpXnnqxwLtdvPPtlO8evrI5D9S6asFRCQ6v+wpiUKbw+vKqyg==
+  dependencies:
+    "@types/ms" "*"
 
 "@types/filesystem@*":
   version "0.0.32"
@@ -1412,6 +1466,11 @@
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.5.tgz#1001cc5e6a3704b83c236027e77f2f58ea010f40"
   integrity sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==
+
+"@types/ms@*":
+  version "0.7.31"
+  resolved "https://registry.yarnpkg.com/@types/ms/-/ms-0.7.31.tgz#31b7ca6407128a3d2bbc27fe2d21b345397f6197"
+  integrity sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==
 
 "@types/node@*":
   version "18.0.0"
@@ -4691,6 +4750,11 @@ subarg@^1.0.0:
   integrity sha512-RIrIdRY0X1xojthNcVtgT9sjpOGagEUKpZdgBUi054OEPFo282yg+zE+t1Rj3+RqKq2xStL7uUHhY+AjbC4BXg==
   dependencies:
     minimist "^1.1.0"
+
+superstruct@^0.16.5:
+  version "0.16.5"
+  resolved "https://registry.yarnpkg.com/superstruct/-/superstruct-0.16.5.tgz#7b7e1f1f8bf6ab141c660e501ac57026e42c09c0"
+  integrity sha512-GBa1VPdCUDAIrsoMVy2lzE/hKQnieUlc1JVoVzJ2YLx47SoPY4AqF85Ht1bPg5r+8I0v54GbaRdNTnYQ0p+T+Q==
 
 supports-color@^5.3.0:
   version "5.5.0"
